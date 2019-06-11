@@ -16,7 +16,7 @@ OBJEXT      := o
 
 #Flags, Libraries and Includes
 CFLAGS      := -std=c++17 -lm #-Wall -O3 -g
-LIB         := -lm -lGL -lGLU -lSDL2 -lBulletSoftBody -lBulletDynamics -lBulletCollision -lLinearMath 
+LIB         := -Bstatic -lm -lGL -lGLU -lSDL2 -lBulletSoftBody -lBulletDynamics -lBulletCollision -lLinearMath 
 INC         := -I$(INCDIR) -I/usr/local/include -I/usr/include/bullet
 INCDEP      := -I$(INCDIR)
 
