@@ -1,5 +1,6 @@
 #pragma once
 #include "componentBase.h"
+#include "systemRender.h"
 
 #include <vector>
 #include <glm/glm.hpp>
