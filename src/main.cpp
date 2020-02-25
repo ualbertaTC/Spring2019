@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include <memory>
 #include <SDL2/SDL.h>
 #include <glm/glm.hpp>
