@@ -5,6 +5,7 @@
 class SceneNode
 {
     std::unique_ptr<Entity> m_Entity;
+    SceneNode* m_Parent;
     std::vector<SceneNode*> m_Children;
 public:
 

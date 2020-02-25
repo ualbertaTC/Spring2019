@@ -32,7 +32,7 @@ struct Texture
 {
     unsigned m_ID;
     std::string m_Type;
-	std::string m_Path;
+    std::string m_Path;
 };
 
 class Mesh
@@ -53,24 +53,24 @@ public:
 class Model
 {
 protected:
-	std::vector<Texture> m_LoadedTextures;
-	std::vector<Mesh> m_Meshes;
-	std::string m_Directory;
+    std::vector<Texture> m_LoadedTextures;
+    std::vector<Mesh> m_Meshes;
+    std::string m_Directory;
 
-	void LoadModel(std::string Path);
-	void ProcessNode(aiNode *Node, const aiScene *Scene);
-	Mesh ProcessMesh(aiMesh *Mesh, const aiScene *Scene);
-	std::vector<Texture> LoadMaterialTextures(aiMaterial *Material, aiTextureType Type, std::string TypeName);
-	unsigned TextureFromFile(const char *Path, bool Gamma = false);
+    void LoadModel(std::string Path);
+    void ProcessNode(aiNode *Node, const aiScene *Scene);
+    Mesh ProcessMesh(aiMesh *Mesh, const aiScene *Scene);
+    std::vector<Texture> LoadMaterialTextures(aiMaterial *Material, aiTextureType Type, std::string TypeName);
+    unsigned TextureFromFile(const char *Path, bool Gamma = false);
 
 public:
 
-	Model(const char *Path)
-	{
-		LoadModel(Path);
-	}
-	
-	void Draw(Shader shader);
+    Model(const char *Path)
+    {
+        LoadModel(Path);
+    }
+    
+    void Draw(Shader shader);
 };
 
 

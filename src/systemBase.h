@@ -7,7 +7,7 @@ class BaseSystem
 protected:
     std::vector<BaseComponent*> m_Components;
 public:
+    void RegisterComponent(BaseComponent* Component);
     virtual void Tick(float DeltaTime) = 0;
-    virtual void RegisterComponent(BaseComponent* Component);
 
 };

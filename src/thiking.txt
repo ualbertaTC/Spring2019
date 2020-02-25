@@ -1,0 +1,26 @@
+Engine {
+    Window {
+
+
+    }
+
+    System {
+        Render {
+            Model {
+                Mesh {
+                }
+                Material {
+                }
+        }
+
+        Physics {
+
+        }
+
+    }
+
+    Scene {
+        
+    }
+
+}
