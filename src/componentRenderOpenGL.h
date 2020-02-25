@@ -15,7 +15,10 @@ class OpenGLRenderComponent
 {
 protected:
     friend RenderSystem;
+    glm::mat4 m_ModelMatrix;
+    Model m_Model;
 public:
+    OpenGLRenderComponent(const char *Path);
 
 };
 

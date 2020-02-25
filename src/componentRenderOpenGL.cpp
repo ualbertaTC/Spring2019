@@ -83,7 +83,7 @@ void Model::LoadModel(std::string Path)
 	if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
 	{
 		// TODO: ERROR MESSAGES
-		fprintf(stderr,"%s:%i", __FILE__, __LINE__);
+		fprintf(stderr,"%s:%i\n", __FILE__, __LINE__);
 		return;
 	}
 
@@ -136,8 +136,10 @@ Mesh Model::ProcessMesh(aiMesh *mesh, const aiScene *Scene)
 		}
 
 		vertices.push_back(vertex);
-	}
+
 	
+	}
+		
 	for (unsigned i = 0; i < mesh->mNumFaces; i++)
 	{
 		aiFace face = mesh->mFaces[i];
